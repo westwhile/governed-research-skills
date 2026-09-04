@@ -14,18 +14,18 @@ Governed Research Skills 是一套版本化的科研 Skill 运行时，将统一
 - 尽可能离线的验证；
 - 基于证据和独立审核的治理流程。
 
-## 首个稳定基线
+## 稳定基线
 
-首个稳定版本为 `v1.0.0`。
+当前稳定版本为 `v1.0.1`；不可变的 `v1.0.0` 标签仍是首个稳定基线。
 
 | 属性 | 值 |
 |---|---|
 | 载荷目录 | `payload/runtime-receiver` |
 | 文件数 | 110 |
-| 规范化 SHA-256 | `5fe9a8a3e56398debdb2b4ed2799541954b4a10bb8e3e704f044c998ed8cf4a2` |
+| 规范化 SHA-256 | `93b1432db6589793a4e221b9357a4ac45bc923c3cc8b661582e3f748fddcc839` |
 | 已部署 Router SHA-256 | `6f8691c439657bf587ba2b20c61a00e935010927b739e3ec0f97c087aa9d2e3c` |
-| 治理基线 | R79，封存于 2026-09-04 |
-| 运行时合同 | P00、D01、C13、L01、C03、C04、C05 全部通过，重试 0 |
+| 治理基线 | R79 运行时基线；R81 打包与许可证审核 |
+| 运行时合同 | 继承 `v1.0.0` 的七会话 PASS 证据；本次仅替换夹具，未重跑模型会话 |
 
 规范化摘要只覆盖 `payload/runtime-receiver` 下的 110 个文件，不包含仓库说明、
 工作流或发布元数据。
@@ -49,6 +49,7 @@ Governed Research Skills 是一套版本化的科研 Skill 运行时，将统一
 
 ```bash
 python tools/verify_payload.py
+python tools/audit_release.py
 ```
 
 或：
@@ -57,7 +58,8 @@ python tools/verify_payload.py
 pwsh -NoProfile -File tools/verify-payload.ps1
 ```
 
-验证器会检查文件集合、大小、逐文件 SHA-256 和规范化载荷摘要。
+载荷验证器会检查文件集合、大小、逐文件 SHA-256 和规范化摘要；发布审核器会
+检查 Apache-2.0 原文、许可元数据、出版方内容残留和合成夹具转换一致性。
 
 ## 安装边界
 
@@ -89,5 +91,7 @@ payload/runtime-receiver/.agents/skills/<skill-name>
 
 ## 许可证
 
-`v1.0.0` 暂不授予开源许可。仓库首先以 private、all-rights-reserved 基线发布，待
-后续单独完成许可证和第三方测试夹具审核后，再决定是否公开。
+`v1.0.1` 采用 Apache License 2.0。先前的 `v1.0.0` 标签仍适用该标签中提交的
+许可证文本。详见根目录 `LICENSE`、`NOTICE`、`THIRD_PARTY_NOTICES.md` 和
+`governance/LICENSE-AUDIT.md`。仓库当前仍保持 private；许可证与可见性是两个
+独立设置。

@@ -17,3 +17,5 @@ jobs:
           python-version: "3.12"
       - name: Verify frozen payload
         run: python tools/verify_payload.py
+      - name: Audit license and synthetic fixtures
+        run: python tools/audit_release.py

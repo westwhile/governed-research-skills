@@ -1,0 +1,32 @@
+PMID- 00000000
+OWN - SYNTHETIC
+STAT- Test Fixture
+LR  - 20260904
+DP  - 2026 Sep
+TI  - Evaluating deterministic citation conversion with a synthetic record and
+      continuation line.
+LID - SYNTHETIC-2026-001 [pii]
+LID - 10.0000/governed-research-skills.synthetic-fixture [doi]
+AB  - This abstract was written solely as synthetic test data for citation parsing.
+      It reports no experiment, patient, product, or real-world research finding.
+CI  - Synthetic fixture authored for Governed Research Skills; no publisher text.
+FAU - Example, Ada
+AU  - Example A
+AD  - Fixture Laboratory, Example Research Institute, Test City.
+FAU - Sample, Lin
+AU  - Sample L
+AD  - Citation Systems Group, Example Research Institute, Test City.
+LA  - eng
+PT  - Journal Article
+VI  - 1
+IP  - 1
+PG  - 1-2
+MH  - Synthetic Data
+MH  - Software Testing
+DEP - 20260904
+PL  - Testland
+TA  - J Synth Citation Tests
+JT  - Journal of Synthetic Citation Tests
+AID - 10.0000/governed-research-skills.synthetic-fixture [doi]
+SO  - J Synth Citation Tests. 2026;1(1):1-2.
+

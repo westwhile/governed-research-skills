@@ -1,7 +1,7 @@
 # Contributing
 
-This repository begins as a private, frozen stable baseline. Changes should be
-proposed on a branch and must not rewrite `v1.0.0`.
+Stable tags are immutable. Changes should be proposed on a branch and released
+under a new semantic version; never rewrite an existing release tag.
 
 ## Requirements
 

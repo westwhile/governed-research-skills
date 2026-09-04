@@ -1,0 +1,20 @@
+TY  - JOUR
+AU  - Example A
+AU  - Sample L
+TI  - Evaluating deterministic citation conversion with a synthetic record and continuation line.
+JO  - Journal of Synthetic Citation Tests
+T2  - Journal of Synthetic Citation Tests
+JA  - J Synth Citation Tests
+PY  - 2026
+VL  - 1
+IS  - 1
+SP  - 1
+EP  - 2
+DO  - 10.0000/governed-research-skills.synthetic-fixture
+UR  - https://doi.org/10.0000/governed-research-skills.synthetic-fixture
+N2  - This abstract was written solely as synthetic test data for citation parsing. It reports no experiment, patient, product, or real-world research finding.
+KW  - Synthetic Data
+KW  - Software Testing
+AN  - PMID:00000000
+DB  - PubMed
+ER  - 

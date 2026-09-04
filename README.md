@@ -22,16 +22,17 @@ The project emphasizes:
 
 ## Stable baseline
 
-The first stable release is `v1.0.0`.
+The current stable release is `v1.0.1`. The immutable `v1.0.0` tag remains the
+first stable baseline.
 
 | Property | Value |
 |---|---|
 | Payload | `payload/runtime-receiver` |
 | Files | 110 |
-| Normalized SHA-256 | `5fe9a8a3e56398debdb2b4ed2799541954b4a10bb8e3e704f044c998ed8cf4a2` |
+| Normalized SHA-256 | `93b1432db6589793a4e221b9357a4ac45bc923c3cc8b661582e3f748fddcc839` |
 | Deployed Router SHA-256 | `6f8691c439657bf587ba2b20c61a00e935010927b739e3ec0f97c087aa9d2e3c` |
-| Governance baseline | R79, sealed 2026-09-04 |
-| Runtime contracts | P00, D01, C13, L01, C03, C04, C05: PASS; retries: 0 |
+| Governance baseline | R79 runtime baseline; R81 packaging and license audit |
+| Runtime contracts | Inherited from `v1.0.0`: P00, D01, C13, L01, C03, C04, C05 PASS; not rerun for this fixture-only patch |
 
 The normalized digest covers only the 110 files under
 `payload/runtime-receiver`. Repository documentation and release metadata are
@@ -61,6 +62,7 @@ Python 3.10 or later:
 
 ```bash
 python tools/verify_payload.py
+python tools/audit_release.py
 ```
 
 PowerShell 7:
@@ -69,9 +71,11 @@ PowerShell 7:
 pwsh -NoProfile -File tools/verify-payload.ps1
 ```
 
-Both commands verify the file set, byte sizes, individual SHA-256 values, and
-the normalized payload digest against `governance/PAYLOAD-MANIFEST.csv` and
-`governance/RELEASE.json`.
+The payload verifiers check the file set, byte sizes, individual SHA-256 values,
+and normalized digest against `governance/PAYLOAD-MANIFEST.csv` and
+`governance/RELEASE.json`. The release auditor checks the Apache-2.0 license
+bytes, license metadata, removed publisher-content markers, and deterministic
+synthetic-fixture conversions.
 
 ## Installation
 
@@ -127,7 +131,7 @@ attestation.
 
 ## License
 
-No open-source license is granted for `v1.0.0`. The repository is initially
-published as a private, all-rights-reserved baseline pending a separate
-licensing and third-party fixture review. See [LICENSE](LICENSE) and
-[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+`v1.0.1` is licensed under the Apache License, Version 2.0. The previous
+`v1.0.0` tag remains governed by the license text committed at that tag. See
+[LICENSE](LICENSE), [NOTICE](NOTICE), [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md),
+and the [license audit](governance/LICENSE-AUDIT.md).
