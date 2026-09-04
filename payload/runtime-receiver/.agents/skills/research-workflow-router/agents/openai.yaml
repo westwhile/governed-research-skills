@@ -1,0 +1,7 @@
+interface:
+  display_name: "Research Workflow Router"
+  short_description: "Route research, quant, and statistics workflows"
+  default_prompt: "Use $research-workflow-router to route this request to one explicit specialist, a safe research chain, or one domain Router."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Stats & Experiment Router"
+  short_description: "Route study design, power, analysis, models, and figures"
+  default_prompt: "Use $stats-experiment-router to select the smallest ordered statistics and experiment Skill set."
+
+policy:
+  allow_implicit_invocation: false

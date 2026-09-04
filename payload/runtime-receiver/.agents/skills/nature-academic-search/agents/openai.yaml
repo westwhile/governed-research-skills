@@ -1,0 +1,7 @@
+interface:
+  display_name: "nature-academic-search"
+  short_description: "Multi-source literature search and citation workflows"
+  default_prompt: "Use $nature-academic-search for a bounded literature workflow via public APIs; respect source tiers and disclose coverage gaps."
+
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "name": "Governed Research Skills",
+  "repository": "westwhile/governed-research-skills",
+  "version": "1.0.0",
+  "release_tag": "v1.0.0",
+  "status": "stable-private-baseline",
+  "release_date": "2026-09-04",
+  "payload": {
+    "path": "payload/runtime-receiver",
+    "file_count": 110,
+    "normalized_sha256": "5fe9a8a3e56398debdb2b4ed2799541954b4a10bb8e3e704f044c998ed8cf4a2",
+    "manifest": "governance/PAYLOAD-MANIFEST.csv",
+    "manifest_sha256": "9987b7222ec726ad8344ea3cde0753333cb2a836ebcc44363704b75ecc21d5c6"
+  },
+  "deployed_router_sha256": "6f8691c439657bf587ba2b20c61a00e935010927b739e3ec0f97c087aa9d2e3c",
+  "governance": {
+    "baseline": "R79",
+    "status": "PASS_CURRENT_DEPLOYED_RUNTIME_GOVERNANCE_BASELINE_SEALED",
+    "r79_manifest_sha256": "da6f3810d6a20ebe8a7cc5c87db8b0d8745f6a403b33c34f1424002c4b94c668",
+    "runtime_contracts": ["P00", "D01", "C13", "L01", "C03", "C04", "C05"],
+    "runtime_contract_status": "PASS",
+    "runtime_retries": 0
+  },
+  "scope": {
+    "manager_updated": false,
+    "default_enabled": false,
+    "kimi_adapted": false,
+    "real_research_validity_claimed": false,
+    "official_affiliation_claimed": false
+  },
+  "license": {
+    "identifier": "LicenseRef-Proprietary",
+    "open_source": false,
+    "public_distribution_review_complete": false
+  }
+}

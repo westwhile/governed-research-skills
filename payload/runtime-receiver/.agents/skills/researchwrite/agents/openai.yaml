@@ -1,0 +1,7 @@
+interface:
+  display_name: "researchwrite"
+  short_description: "Compose or revise evidence-first scientific proposals"
+  default_prompt: "Use $researchwrite with only the evidence and paths authorized in this task."
+
+policy:
+  allow_implicit_invocation: false

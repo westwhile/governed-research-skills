@@ -1,0 +1,7 @@
+interface:
+  display_name: "Nature Literature Pipeline"
+  short_description: "Lightweight literature digest workflow with explicit-authorization boundaries"
+  default_prompt: "Use $nature-literature-pipeline to design a literature digest workflow for my research field."
+
+policy:
+  allow_implicit_invocation: false

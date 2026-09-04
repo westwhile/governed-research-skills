@@ -1,0 +1,7 @@
+interface:
+  display_name: "Nature Research Router"
+  short_description: "Route Nature research tasks only to adopted capabilities"
+  default_prompt: "Use $nature-research-router to determine whether an adopted Nature workflow is available for this task."
+
+policy:
+  allow_implicit_invocation: false

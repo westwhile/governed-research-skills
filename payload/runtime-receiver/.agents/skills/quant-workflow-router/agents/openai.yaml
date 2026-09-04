@@ -1,0 +1,7 @@
+interface:
+  display_name: "Quant Workflow Router"
+  short_description: "Route quantitative work to the smallest safe Skill subset"
+  default_prompt: "Use $quant-workflow-router to select the smallest ordered Skill set for this quantitative task."
+
+policy:
+  allow_implicit_invocation: false

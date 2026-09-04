@@ -1,0 +1,7 @@
+interface:
+  display_name: "nature-reader"
+  short_description: "Build source-grounded bilingual paper readers"
+  default_prompt: "Use $nature-reader with only the evidence and paths authorized in this task."
+
+policy:
+  allow_implicit_invocation: false

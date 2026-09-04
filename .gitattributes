@@ -1,0 +1,12 @@
+* text=auto eol=lf
+
+*.md text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.py text eol=lf
+*.ps1 text eol=lf
+
+# This rule must remain last so generic text rules cannot normalize payload bytes.
+payload/runtime-receiver/** -text -eol
